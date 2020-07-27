@@ -1,15 +1,45 @@
+.Header {
+  background: url(../../images/bg_purple.png);
+}
+
 .Header__nav {
   margin: 0 auto;
-  max-width: 960px;
-  padding: 1.45rem 1.0875rem;
+  box-sizing: border-box;
+  padding: 4.375rem 8vw;
 
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
 }
 
 .Header__right {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-around;
 }
+
+.Header__right a {
+  font-weight: bold;
+  font-size: 1.125rem !important;
+  text-decoration: none;
+  margin: 0 1.625rem 0 0;
+  color: white;
+}
+
+.Header__right .img_btn {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 1.625rem 0 0;
+  padding: 0;
+}
+
+.Header__right .dapp_btn {
+  background-color: white;
+  color: #4F56B5;
+  box-sizing: border-box;
+  padding: 6px 14px;
+  border-radius: 6px;
+}
+

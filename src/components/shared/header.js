@@ -4,29 +4,21 @@ import React from "react";
 
 import "./header.css";
 
+import Icons from '../shared/icons';
+
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `blue`,
-      marginBottom: `1.45rem`,
-    }}
-  >
+  <header className="Header">
     <div className="Header__nav">
       <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
+        <Link to="/">
+          <Icons.Logo fill="#fff" width="200px" />
         </Link>
       </h1>
       <div className="Header__right">
-        <p>link 1</p>
-        <p>link 2</p>
-        <p>link 3</p>
+        <a href="/test">Why use Commodo</a>
+        <a href="/test">How it works</a>
+        <a href="/test" className="img_btn"><Icons.Github fill="#fff" width="32px" /></a>
+        <a href="/test" className="dapp_btn">dapp</a>
       </div>
     </div>
   </header>
