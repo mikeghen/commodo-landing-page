@@ -1,0 +1,21 @@
+section {
+  margin: 100px 0px 100px 0px;
+}
+
+.What__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.How__step {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.Tokens__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
