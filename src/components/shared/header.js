@@ -2,35 +2,63 @@ import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 
-import "./header.css";
+import "./header.scss";
+import Icons from '../shared/icons';
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `blue`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div className="Header__nav">
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-      <div className="Header__right">
-        <p>link 1</p>
-        <p>link 2</p>
-        <p>link 3</p>
-      </div>
-    </div>
-  </header>
+import { slide as Menu } from 'react-burger-menu';
+import { useMediaQuery } from 'react-responsive';
+
+
+const Links = (props) => (
+  <div className="Header__links">
+    <a href="/test">Why use Commodo</a>
+    <a href="/test">How it works</a>
+    <a href="/test" className="img_btn"><Icons.Github fill="#fff" width="32px" />{props.isMobile && 'Commodo on Github'}</a>
+    <a href="/test" className="dapp_btn">dapp</a>
+  </div>
 );
+
+const Header = ({ siteTitle }) => {
+  const isMobile = useMediaQuery({query: '(max-device-width: 1224px)'})
+  return (
+  <>
+  {isMobile ?
+    <div>
+      <Menu
+        right
+        customBurgerIcon={ <Icons.Hamburger /> }
+        customCrossIcon={ <Icons.Closer /> } >
+        <Links isMobile />
+      </Menu>   
+      <header className="Header">
+        <div className="Header__nav">
+          <h1 style={{ margin: 0 }}>
+            <Link to="/">
+              <Icons.Logo fill="#fff" width="144px" />
+            </Link>
+          </h1>      
+        </div>
+      </header>
+      </div>
+  :
+    <div>
+    <header className="Header">
+      <div className="Header__nav">
+        <h1 style={{ margin: 0 }}>
+          <Link to="/">
+            <Icons.Logo fill="#fff" width="200px" />
+          </Link>
+        </h1>
+        {/* <div className="Header__right"> */}
+          <Links />
+        {/* </div>         */}
+      </div>
+    </header>
+    </div>
+  }
+  </>
+  )
+};
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

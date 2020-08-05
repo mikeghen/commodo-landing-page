@@ -1,0 +1,48 @@
+@import '../shared/branding.scss';
+
+.Footer {
+    @include purplebg;
+    @include font;
+    @include box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 8rem 12vw 10rem 12vw;
+}
+
+.Footer__links {
+    margin: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.Footer__links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* QUERIES */
+
+/* Mobile */
+@media only screen and (max-width : 430px) {
+    .Footer {
+        padding: 4rem 12vw 6rem 12vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .Footer__links {
+        margin-top: 2rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}

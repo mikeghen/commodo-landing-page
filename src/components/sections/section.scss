@@ -1,0 +1,414 @@
+@import '../shared/branding.scss';
+
+.hero {
+  @include purplebg;
+  @include font;
+  @include box;
+  padding: 4.325rem 12vw 8rem 12vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  color: white;
+  margin-bottom: 1.25rem;
+  font-weight: bold;
+}
+
+.hero h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: #D4D7EC;
+  font-weight: 500;
+  width: 100%;
+  max-width: 600px;
+}
+
+.hero_buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 3.25rem 0 0 0;
+}
+
+.hero_buttons .ant-btn-lg {
+  background-color: $purple;
+  color: #D4D7EC;
+  width: 290px;
+  margin: 0 0.625rem;
+}
+
+
+.What {
+  @include font;
+  @include box;
+  padding: 0 0 8rem 0;
+  background: url(../../images/bg_purple_half.png) repeat-x white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.What__totalbox {
+  width: 84vw;
+  @include box;
+  @include greybg;
+  padding: 2vw 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.What__cards {
+  @include box;
+  padding: 3rem 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.What__card {
+  min-width: 120px;
+  max-width: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  margin: 0 1.75rem;
+}
+
+.What__card h3 {
+  font-size: 1.25rem;
+  color: $purple;
+  font-weight: bold;
+}
+
+.What__card p {
+  font-size: 1rem;
+}
+
+.What__card img {
+  width: 125px;
+}
+
+.What__extra {
+  width: 100%;
+  @include box;
+  padding: 0 8rem 6rem 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.What__extra h2 {
+  font-size: 2.25rem;
+  line-height: 3rem;
+  font-weight: normal;
+}
+.What__extra_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 1.75rem 0 0 0;
+}
+.What__extra_box p {
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  font-weight: normal;
+  max-width: 550px;
+}
+.What__extra_box_img {
+  flex: 1;
+}
+.What__extra_box_img img {
+  margin: 0.5rem 0 0 0;
+  height: 5px;
+  width: 250px;
+}
+
+.How {
+  @include font;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.How__totalbox {
+  width: 80vw;
+  max-width: 850px;
+  @include box;
+  padding: 2vw 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.How__totalbox h3 {
+  font-size: 2.25rem;
+  font-weight: normal;
+}
+
+.How__img {
+  width: 80vw;
+  max-width: 850px;
+}
+
+.How__step {
+  width: 100%;
+  @include box;
+  padding: 2.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-bottom: 1px dashed $purple;
+}
+
+.How__step:nth-child(5) {
+  border-bottom: none;
+}
+
+.How__step h5 {
+  width: 4rem;
+  min-width: 4rem;
+  font-size: 2.25rem;
+  font-weight: normal;
+}
+
+.How__step p {
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin:0;
+}
+
+.How button {
+  width: 100%;
+  max-width: 448px;
+  color: $purple;
+  background-color: $lightgrey;
+  margin: 3rem 0 6rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.How button svg {
+  margin: 2px 8px 0 0;
+}
+  
+.Tokens {
+  @include font;
+  @include greybg;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Tokens__totalbox {
+  width: 80vw;
+  max-width: 850px;
+  @include box;
+  padding: 6.5rem 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.Tokens h3 {
+  font-size: 2.25rem;
+  font-weight: normal;
+}
+
+
+.Tokens__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+.Tokenslink {
+  margin: 1rem 0 0 1rem;
+}
+
+.Tokenspair {
+  width: 7.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.Tokenspair p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1.25rem;
+}
+
+
+.Tokenspair__pair {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.Tokenspair__pair .coll {
+  border-radius: 50%;
+  width: 4.875rem;
+  height: 4.875rem;
+  z-index: 2;
+  margin:0;
+  background-color: rgba(223,223,223,0.5);
+}
+
+.Tokenspair__pair .borr {
+  border-radius: 50%;
+  width: 4.25rem;
+  height: 4.25rem;
+  margin-left: -0.35rem;
+  background-color: rgba(223,223,223,0.5);
+}
+
+.Tokenspair__pair .coll img, .Tokenspair__pair .borr img {
+  border-radius: 50%;
+  margin: 0;
+  @include lightshadow;
+}
+
+
+
+
+/* QUERIES */
+
+/* Mobile */
+@media only screen and (max-width : 430px) {
+
+  .hero {
+    padding: 4.75rem 12vw 6rem 12vw;
+    margin-top: -1px;
+  }
+  .hero h1 {
+    font-size: 1.875rem;
+    margin-bottom: 1.5rem;
+  }
+  .hero h3 {
+    font-size: 1.15rem;
+    line-height: 1.5rem;
+  }
+  .hero_buttons {
+    flex-direction: column;
+  }
+  .hero_buttons .ant-btn-lg {
+    margin: 0.5rem 0;
+  }
+  .What {
+    padding: 0 0 4rem 0;
+  }
+  
+  .What__cards {
+    margin-bottom: 0;
+  }
+
+  .What__extra {
+    padding: 2rem 3rem;
+  }
+
+  .What__extra h2 {
+    font-size: 1.75rem;
+    line-height: 2.15rem;
+  }
+
+  .What__extra_box {
+    margin: 1rem 0 0 0;
+  }
+  .What__extra_box p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .What__extra_box_img img {
+    margin: 0;
+    height: 0;
+    width: 0;
+  }
+  .How__totalbox h3, .Tokens h3 {
+    font-size: 1.75rem;
+    line-height: 2.15rem;
+  }
+  .How__step h5 {
+    width: 2rem;
+    min-width: 3rem;
+    font-size: 2rem;
+    font-weight: normal;
+  }
+  .How button {
+    margin:2rem 0 5rem 0;
+  }
+
+  .How__step p {
+    font-size: 1rem;
+  }
+  .Tokens__totalbox {
+    padding: 5rem 2vw;
+  }
+
+  .Tokens__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .Tokenspair {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 1.25rem 0;
+  }
+
+  .Tokenspair p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 0 0 1.25rem;
+  }
+}
+
+
+/* Desktop XL */
+@media only screen and (min-width : 1824px) {
+  .What__totalbox {
+      max-width: 70vw;
+  }
+  .How__totalbox, .Tokens__totalbox {
+    max-width: 1000px;
+  }
+  .What__card {
+    max-width: 200px;
+  }
+
+  .What__extra_box p {
+    max-width: 700px;
+  }
+
+}

@@ -1,17 +1,17 @@
 import React from "react";
 
-import "./footer.css";
+import "./footer.scss";
+import Icons from '../shared/icons';
 
 const Footer = () => (
   <footer>
     <div className="Footer">
-      <p>Commodo</p>
-      <div className="Footer__links">
-        <p>link 1</p>
-        <p>link 1</p>
-        <p>link 1</p>
-        <p>link 1</p>
-      </div>
+        <Icons.Logo fill="#fff" width="200px" />
+        <div className="Footer__links">
+          <a href="/">Why use Commodo</a>
+          <a href="/">How does it work</a>
+          <a href="/">Tokens</a>
+        </div>
     </div>
   </footer>
 );
