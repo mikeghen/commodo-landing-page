@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./section.css";
+import "./section.scss";
 
 
 import illu1 from "../../images/illu_1.png";

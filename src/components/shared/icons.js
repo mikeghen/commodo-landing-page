@@ -83,4 +83,53 @@ const Github = ({
     </svg>
   );
 
-  export default { Github, Logo };
+  const Hamburger = ({
+    style = {},
+    fill = "white",
+    width = "30px",
+    height= "20px",
+    className = "",
+    viewBox = "0 0 30 20"
+  }) => (
+    <svg
+      width={width}
+      style={style}
+      height={height}
+      viewBox={viewBox}
+      xmlns="http://www.w3.org/2000/svg"
+      className={`svg-icon ${className || ""}`}
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+    >
+    <g id="Group_196" data-name="Group 196" transform="translate(-313 -48)">
+      <rect id="Rectangle_84" data-name="Rectangle 84" width="30" height="2" transform="translate(313 48)" fill={fill}/>
+      <rect id="Rectangle_85" data-name="Rectangle 85" width="30" height="2" transform="translate(313 57)" fill={fill}/>
+      <rect id="Rectangle_86" data-name="Rectangle 86" width="30" height="2" transform="translate(313 66)" fill={fill}/>
+    </g>
+    </svg>
+  );
+
+  const Closer = ({
+    style = {},
+    fill = "#747CB5",
+    width = "10px",
+    className = "",
+    viewBox = "0 0 22.627 22.627"
+  }) => (
+    <svg
+      width={width}
+      style={style}
+      height={width}
+      viewBox={viewBox}
+      xmlns="http://www.w3.org/2000/svg"
+      className={`svg-icon ${className || ""}`}
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+    >
+    <g id="Group_197" data-name="Group 197" transform="translate(-256.686 -46.686)">
+      <rect id="Rectangle_105" data-name="Rectangle 105" width="30" height="2" transform="translate(256.686 67.9) rotate(-45)" fill={fill}/>
+      <rect id="Rectangle_106" data-name="Rectangle 106" width="30" height="2" transform="translate(277.899 69.314) rotate(-135)" fill={fill}/>
+    </g>
+    </svg>
+  );
+
+
+  export default { Github, Logo, Hamburger, Closer };

@@ -1,5 +1,7 @@
 .Header {
   background: url(../../images/bg_purple.png);
+  font-family: 'DM Sans', sans-serif;
+
 }
 
 .Header__nav {
