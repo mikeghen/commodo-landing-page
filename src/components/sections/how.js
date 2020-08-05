@@ -12,7 +12,7 @@ import { useMediaQuery } from 'react-responsive';
 import "./section.scss";
 
 const How = () => {
-  const isMobile = useMediaQuery({query: '(max-device-width: 1224px)'})
+  const isMobile = useMediaQuery({query: '(max-device-width: 604px)'})
   return (
   <section className="How">
   <div className="How__totalbox">
