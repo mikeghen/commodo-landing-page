@@ -14,7 +14,7 @@ import "./section.scss";
 const How = () => {
   const isMobile = useMediaQuery({query: '(max-device-width: 604px)'})
   return (
-  <section className="How">
+  <section className="How" id="how">
   <div className="How__totalbox">
     <h3>How does Commodo work?</h3>
     <div className="How__img">

@@ -29,17 +29,26 @@
 
 .hero_buttons {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 3.25rem 0 0 0;
+  width: 100%;
+
 }
 
 .hero_buttons .ant-btn-lg {
   background-color: $purple;
   color: #D4D7EC;
-  width: 290px;
+  width: 100%;
+  // min-width: 290px;
+  max-width: 450px;
+
   margin: 0 0.625rem;
+}
+.hero_buttons a {
+  color: $notwhitetxt;
+  margin-top: 1.5rem;
 }
 
 

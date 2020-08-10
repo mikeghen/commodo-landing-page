@@ -11,7 +11,7 @@ import line from "../../images/line.png";
 
 
 const What = () => (
-  <section className="What">
+  <section className="What" id="why">
     <div className="What__totalbox">
     <div className="What__cards">
       <div className="What__card">
@@ -47,7 +47,7 @@ const What = () => (
       <div className="What__extra_box_img">
         <img src={line} alt="line" />
       </div>
-      <p>Most existing protocols for collateral-backed lending with ERC-20 tokens are overly complex. They rely heavy on token-economics, have long and complicated smart contracts and are tied to non-transparent oracle mechanisms for price feeds.<br /><br />Commodo is created as an open-source framework so transparency is of paramount importance. Aimed at your average developer, the contracts are easy to read and redeploy. The unique setup with <a href>Tellor Oracle</a> makes for a clear and open infrastructure, true to blockchain-nature.</p>
+      <p>Most existing protocols for collateral-backed lending with ERC-20 tokens are overly complex. They rely heavy on token-economics, have long and complicated smart contracts and are tied to non-transparent oracle mechanisms for price feeds.<br /><br />Commodo is created as an open-source framework so transparency is of paramount importance. Aimed at your average developer, the contracts are easy to read and redeploy. The unique setup with <a href="https://tellor.io/" target="blank">Tellor Oracle</a> makes for a clear and open infrastructure, true to blockchain-nature.</p>
       </div>
     </div>
     </div>
