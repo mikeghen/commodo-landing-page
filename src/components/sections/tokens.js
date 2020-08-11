@@ -52,7 +52,7 @@ const Tokens = () => (
 
     <div className="Tokenslink">
       <p>
-        Didn’t find what you’re looking for?<br /><a href="https://github.com/mikeghen/commodo">request a token</a>
+        Didn’t find what you’re looking for?<br /><a href="https://forms.gle/tdqQsuK8XXMRYxqH7">request a token</a>
       </p>
     </div>
     </div>
