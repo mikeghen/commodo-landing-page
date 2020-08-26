@@ -21,3 +21,5 @@
    ```shell
    yarn build
    ```
+
+   This builds to the /public folder
