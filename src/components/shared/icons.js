@@ -5,14 +5,12 @@ const Logo = ({
     style = {},
     fill = "white",
     width = "130px",
-    height = "",
     className = "",
     viewBox = "0 0 130 20"
   }) => (
     <svg
       width={width}
       style={style}
-      height={height}
       viewBox={viewBox}
       xmlns="http://www.w3.org/2000/svg"
       className={`svg-icon ${className || ""}`}

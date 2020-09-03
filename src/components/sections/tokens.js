@@ -9,7 +9,7 @@ import DAI from '../../images/tokens/DAI.png';
 import "./section.scss";
 
 const Tokens = () => (
-  <section className="Tokens">
+  <section className="Tokens" id="tokens">
     <div className="Tokens__totalbox">
     <h3>Commodo works with these tokens</h3>
     <div className="Tokens__list">
@@ -52,7 +52,7 @@ const Tokens = () => (
 
     <div className="Tokenslink">
       <p>
-        Didn’t find what you’re looking for?<br /><a href="#">request link</a>
+        Didn’t find what you’re looking for?<br /><a href="https://forms.gle/tdqQsuK8XXMRYxqH7">request a token</a>
       </p>
     </div>
     </div>

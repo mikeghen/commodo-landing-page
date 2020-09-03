@@ -7,14 +7,15 @@ import Icons from '../shared/icons';
 
 import { slide as Menu } from 'react-burger-menu';
 import { useMediaQuery } from 'react-responsive';
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 
 const Links = (props) => (
   <div className="Header__links">
-    <a href="/test">Why use Commodo</a>
-    <a href="/test">How it works</a>
-    <a href="/test" className="img_btn"><Icons.Github fill="#fff" width="32px" />{props.isMobile && 'Commodo on Github'}</a>
-    <a href="/test" className="dapp_btn">dapp</a>
+    <AnchorLink to="/#why" title="Why use Commodo" />
+    <AnchorLink to="/#how" title="How it works" />
+    <a href="https://github.com/mikeghen/commodo" target="blank" className="img_btn"><Icons.Github fill="#fff" width="32px" />{props.isMobile && 'Commodo on Github'}</a>
+    <a href="http://dapp.commodo.com" className="dapp_btn">dapp</a>
   </div>
 );
 
