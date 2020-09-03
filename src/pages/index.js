@@ -7,6 +7,7 @@ import What from "../components/sections/what";
 import How from "../components/sections/how";
 import Tokens from "../components/sections/tokens";
 
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
