@@ -1,28 +1,61 @@
 import React from "react";
 
-import Image from "../shared/image";
+// import Image from "../shared/image";
 
-import "./section.css";
+// import DAI from "./DAI.png";
+import TRB from '../../images/tokens/TRB.png';
+import DAI from '../../images/tokens/DAI.png';
+
+import "./section.scss";
 
 const Tokens = () => (
-  <section>
+  <section className="Tokens" id="tokens">
+    <div className="Tokens__totalbox">
     <h3>Commodo works with these tokens</h3>
     <div className="Tokens__list">
-      <div style={{ width: "50px" }}>
-        <Image />
+
+    <div className="Tokenspair">
+      <div className="Tokenspair__pair">
+        <div className="coll">
+          <img src={TRB} alt='Collateral token'/>
+        </div>
+        <div className="borr">
+          <img src={DAI} alt='borrow token'/>  
+        </div>
       </div>
-      <div style={{ width: "50px" }}>
-        <Image />
+      <p>TRB - DAI</p>
+    </div>
+
+    <div className="Tokenspair">
+      <div className="Tokenspair__pair">
+        <div className="coll">
+          {/* <img src={TRB} alt='Collateral token'/> */}
+        </div>
+        <div className="borr">
+          {/* <img src={DAI} alt='borrow token'/>   */}
+        </div>
       </div>
-      <div style={{ width: "50px" }}>
-        <Image />
+      {/* <p>TRB - DAI</p> */}
+    </div>
+
+    <div className="Tokenspair">
+      <div className="Tokenspair__pair">
+        <div className="coll">
+          {/* <img src={TRB} alt='Collateral token'/> */}
+        </div>
+        <div className="borr">
+          {/* <img src={DAI} alt='borrow token'/>   */}
+        </div>
       </div>
-      <div style={{ width: "50px" }}>
-        <Image />
-      </div>
+      {/* <p>TRB - DAI</p> */}
+    </div>
+
+    <div className="Tokenslink">
       <p>
-        Zombie ipsum reversus ab viral inferno. <a href="#">request link</a>
+        Didn’t find what you’re looking for?<br /><a href="https://forms.gle/tdqQsuK8XXMRYxqH7">request a token</a>
       </p>
+    </div>
+    </div>
     </div>
   </section>
 );
